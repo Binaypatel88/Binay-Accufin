@@ -1,0 +1,195 @@
+/* Global Styles */
+:root {
+    --header-bg: #003366; /* navy blue */
+    --footer-bg: #003366;
+    --text-white: #ffffff;
+    --secondary-bg: #f4f4f4; /* light gray */
+    --link-color: #00bfff; /* sky blue */
+    --link-hover: #40E0D0; /* turquoise */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: var(--header-bg);
+    color: var(--text-white);
+}
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.header-text h1 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+.header-text .company-name {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    color: var(--link-color);
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+}
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--header-bg);
+}
+.section p {
+    margin-bottom: 20px;
+}
+.quote {
+    font-style: italic;
+    color: var(--link-color);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* About Section */
+.about {
+    background: #fff;
+}
+
+/* Services Section */
+.services {
+    background: var(--secondary-bg);
+}
+.services ul {
+    list-style: none;
+    padding-left: 0;
+}
+.services ul li {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* Experience Section */
+.experience {
+    background: #fff;
+}
+.experience ul {
+    list-style: none;
+    padding-left: 0;
+}
+.experience ul li {
+    margin: 10px 0;
+}
+
+/* Education Section */
+.education {
+    background: var(--secondary-bg);
+}
+.education ul {
+    list-style: none;
+    padding-left: 0;
+}
+.education ul li {
+    margin: 10px 0;
+}
+
+/* Skills Section */
+.skills {
+    background: #fff;
+}
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills-list li {
+    background: var(--secondary-bg);
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact {
+    background: var(--secondary-bg);
+}
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contact-list li {
+    margin: 10px 0;
+}
+.contact-list a {
+    color: var(--header-bg);
+    text-decoration: none;
+}
+.contact-list a:hover {
+    color: var(--link-color);
+}
+
+/* Footer */
+footer {
+    background: var(--footer-bg);
+    color: var(--text-white);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
